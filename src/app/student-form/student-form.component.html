@@ -1,0 +1,32 @@
+<p>student-form works!</p>
+<form #addStudentForm="ngForm" (ngSubmit)="addNewStudent(addStudentForm.value)">
+    <!-- div>
+        <label>Student ID: </label>
+        <input placeholder="enter student name here..." name="studentId" ngModel/>
+    </div -->
+    <div>
+        <label>Student Reg. No: </label>
+        <input placeholder="enter student name here..." name="studentRegistrationNumber" ngModel/>
+    </div>
+    <div>
+        <label>Student Name: </label>
+        <input placeholder="enter student name here..." name="studentName" ngModel/>
+    </div>
+    <div>
+        <label>Student Gender: </label>
+        <span>
+            <input id="male" type="radio" name="studentGender" value="Male" ngModel/>
+            <label for="male">Male</label>
+        </span>
+        <span>
+            <input id="female" type="radio" name="studentGender" value="Female" ngModel/>
+            <label for="female">Female</label>
+        </span>
+        <span>
+            <input id="other" type="radio" name="studentGender" value="Other" ngModel/>
+            <label for="other">Other</label>
+        </span>
+    </div>
+
+    <input type="submit" value="ADD"/>
+</form>

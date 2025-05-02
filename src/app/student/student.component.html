@@ -1,0 +1,16 @@
+<p>student works!</p>
+<p>
+    {{ title }}
+</p>
+
+
+<table>
+    <tr *ngFor="let s of data; index as i">
+        <td>{{i + 1 }}</td>
+        <td>{{s.studentRegistrationNumber}}</td>
+        <td>{{s.studentName}}</td>
+        <td>{{s.studentGender}}</td>
+    </tr>
+</table>
+
+<button onclick="">Add Student</button>
