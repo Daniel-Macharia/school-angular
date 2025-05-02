@@ -6,10 +6,13 @@
 
 <table>
     <tr *ngFor="let s of data; index as i">
-        <td>{{i + 1 }}</td>
+        <td>{{s.studentId}}</td>
         <td>{{s.studentRegistrationNumber}}</td>
         <td>{{s.studentName}}</td>
         <td>{{s.studentGender}}</td>
+        <td>
+            <button (click)="deleteStudent(s.studentId)">Delete</button>
+        </td>
     </tr>
 </table>
 

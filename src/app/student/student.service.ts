@@ -60,4 +60,16 @@ export class StudentService {
 
     return 1;
   }
+
+  public deleteStudent(studentId: any): boolean{
+    console.log("deleting: ", studentId);
+    this.http.delete("http://localhost:8080/student/delete/" + studentId)
+    .subscribe(
+      resp=>{
+        console.log(resp);
+      }
+    );
+
+    return false;
+  }
 }

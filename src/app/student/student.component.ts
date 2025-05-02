@@ -21,4 +21,11 @@ export class StudentComponent implements OnInit{
     
   }
 
+  public deleteStudent(studentId:any): boolean
+  {
+    this.studentService.deleteStudent(studentId);
+
+    return false;
+  }
+
 }
